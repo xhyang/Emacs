@@ -1,0 +1,683 @@
+;; Object nt/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nt/"
+  :tables (list 
+   (semanticdb-table "cmdproxy.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("windows.h" include (:system-flag t) nil [1400 1420])
+            ("stdarg.h" include (:system-flag t) nil [1422 1441])
+            ("malloc.h" include (:system-flag t) nil [1457 1476])
+            ("stdlib.h" include (:system-flag t) nil [1491 1510])
+            ("string.h" include (:system-flag t) nil [1525 1544])
+            ("stdin" variable (:constant-flag t) nil [1715 1720])
+            ("stdout" variable (:constant-flag t) nil [1762 1768])
+            ("stderr" variable (:constant-flag t) nil [1810 1816])
+            ("vfprintf" function
+               (:arguments 
+                  ( ("hnd" variable (:type ("HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1863 1874])
+                    ("msg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1875 1886])
+                    ("args" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1887 1900]))                  
+                :type "int")
+                nil [1850 2043])
+            ("fprintf" function
+               (:arguments 
+                  ( ("hnd" variable (:type ("HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2057 2068])
+                    ("msg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2069 2080])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2081 2085]))                  
+                :type "int")
+                nil [2045 2205])
+            ("printf" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2218 2229])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2230 2234]))                  
+                :type "int")
+                nil [2207 2357])
+            ("fail" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2370 2381])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2382 2386]))                  
+                :type "void")
+                nil [2359 2494])
+            ("warn" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2507 2518])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2519 2523]))                  
+                :type "void")
+                nil [2496 2617])
+            ("canon_filename" function
+               (:pointer 1
+                :arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2712 2724]))                  
+                :type "char")
+                nil [2689 2834])
+            ("skip_space" function
+               (:pointer 1
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2855 2865]))                  
+                :type "char")
+                nil [2836 2915])
+            ("skip_nonspace" function
+               (:pointer 1
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2939 2949]))                  
+                :type "char")
+                nil [2917 3008])
+            ("escape_char" variable
+               (:default-value "'\\\\'"
+                :type "int")
+                nil [3010 3033])
+            ("get_next_token" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3108 3119])
+                    ("pSrc" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3120 3133]))                  
+                :type "int")
+                nil [3088 4667])
+            ("search_dir" function
+               (:arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4825 4835])
+                    ("exec" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4836 4847])
+                    ("bufsize" variable (:type "int") (reparse-symbol arg-sub-list) [4848 4860])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4861 4874]))                  
+                :type "int")
+                nil [4809 5208])
+            ("make_absolute" function
+               (:pointer 1
+                :arguments 
+                  ( ("prog" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5386 5397]))                  
+                :type "char")
+                nil [5364 6941])
+            ("child" variable (:type ("PROCESS_INFORMATION" type (:type "class") nil nil)) nil [7398 7424])
+            ("interactive" variable
+               (:default-value "TRUE;"
+                :type "int")
+                nil [7425 7448])
+            ("console_event_handler" function
+               (:arguments 
+                  ( ("event" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7478 7490]))                  
+                :type ("BOOL" type (:type "class") nil nil))
+                nil [7450 8382])
+            ("spawn" function
+               (:arguments 
+                  ( ("progname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8534 8550])
+                    ("cmdline" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8551 8566])
+                    ("dir" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8567 8578])
+                    ("retcode" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8579 8593]))                  
+                :type "int")
+                nil [8523 9614])
+            ("get_env_size" function (:type "int") nil [9665 9853])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9936 9945])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9946 9959]))                  
+                :type "int")
+                nil [9926 18964]))          
+    :file "cmdproxy.c"
+    :pointmax 19051
+    :fsize 19050
+    :lastmodtime '(19383 49278)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("stderr" . ((symbol "GetStdHandle" 1817 . 1829) (semantic-list "(STD_ERROR_HANDLE)" 1830 . 1848)))
+          ("stdin" . ((symbol "GetStdHandle" 1722 . 1734) (semantic-list "(STD_INPUT_HANDLE)" 1735 . 1753)))
+          ("stdout" . ((symbol "GetStdHandle" 1769 . 1781) (semantic-list "(STD_OUTPUT_HANDLE)" 1782 . 1801)))
+          )
+
+    )
+   (semanticdb-table "preprep.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [908 927])
+            ("stdio.h" include (:system-flag t) nil [928 946])
+            ("fcntl.h" include (:system-flag t) nil [947 965])
+            ("time.h" include (:system-flag t) nil [966 983])
+            ("windows.h" include (:system-flag t) nil [1058 1078])
+            ("PIMAGE_NT_HEADERS" function
+               (:arguments 
+                  ( ("pfnCheckSumMappedFile" variable
+                       (:pointer 1
+                        :type ("__stdcall" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1230 1264]))                  
+                :type "int")
+                nil [1211 1364])
+            ("min" variable (:constant-flag t) nil [1397 1400])
+            ("max" variable (:constant-flag t) nil [1441 1444])
+            ("file_data" type
+               (:typedef ("file_data" type
+                     (:members 
+                        ( ("name" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [1533 1553])
+                          ("size" variable (:type "unsigned long") (reparse-symbol classsubparts) [1558 1578])
+                          ("file" variable (:type ("HANDLE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1583 1603])
+                          ("file_mapping" variable (:type ("HANDLE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1608 1636])
+                          ("file_base" variable
+                             (:pointer 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [1641 1666]))                        
+                      :type "struct")
+                      nil nil)
+                :superclasses "file_data"
+                :type "typedef")
+                nil [1502 1679])
+            ("open_input_file" function
+               (:arguments 
+                  ( ("p_file" variable
+                       (:pointer 1
+                        :type ("file_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1702 1720])
+                    ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1721 1736]))                  
+                :type "int")
+                nil [1681 2447])
+            ("open_output_file" function
+               (:arguments 
+                  ( ("p_file" variable
+                       (:pointer 1
+                        :type ("file_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2471 2489])
+                    ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2490 2505])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2506 2525]))                  
+                :type "int")
+                nil [2449 3164])
+            ("open_inout_file" function
+               (:arguments 
+                  ( ("p_file" variable
+                       (:pointer 1
+                        :type ("file_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3187 3205])
+                    ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3206 3221]))                  
+                :type "int")
+                nil [3166 3936])
+            ("close_file_data" function
+               (:arguments 
+                  ( ("p_file" variable
+                       (:pointer 1
+                        :type ("file_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4027 4045]))                  
+                :type "void")
+                nil [4005 4307])
+            ("get_unrounded_section_size" function
+               (:arguments 
+                  ( ("p_section" variable (:type ("PIMAGE_SECTION_HEADER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4412 4444]))                  
+                :type "unsigned long")
+                nil [4370 4690])
+            ("find_section" function
+               (:pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4787 4799])
+                    ("nt_header" variable
+                       (:pointer 1
+                        :type ("IMAGE_NT_HEADERS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4800 4829]))                  
+                :type ("IMAGE_SECTION_HEADER" type (:type "class") nil nil))
+                nil [4750 5091])
+            ("rva_to_section" function
+               (:pointer 1
+                :arguments 
+                  ( ("rva" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5233 5243])
+                    ("nt_header" variable
+                       (:pointer 1
+                        :type ("IMAGE_NT_HEADERS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5244 5273]))                  
+                :type ("IMAGE_SECTION_HEADER" type (:type "class") nil nil))
+                nil [5194 6009])
+            ("offset_to_section" function
+               (:pointer 1
+                :arguments 
+                  ( ("offset" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6157 6170])
+                    ("nt_header" variable
+                       (:pointer 1
+                        :type ("IMAGE_NT_HEADERS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6171 6200]))                  
+                :type ("IMAGE_SECTION_HEADER" type (:type "class") nil nil))
+                nil [6115 6530])
+            ("relocate_offset" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("offset" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6779 6792])
+                    ("src_nt_header" variable
+                       (:pointer 1
+                        :type ("IMAGE_NT_HEADERS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6796 6829])
+                    ("dst_nt_header" variable
+                       (:pointer 1
+                        :type ("IMAGE_NT_HEADERS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6833 6866]))                  
+                :type ("DWORD" type (:type "class") nil nil))
+                nil [6749 7843])
+            ("OFFSET_TO_RVA" variable (:constant-flag t) nil [7853 7866])
+            ("RVA_TO_OFFSET" variable (:constant-flag t) nil [7972 7985])
+            ("RVA_TO_SECTION_OFFSET" variable (:constant-flag t) nil [8085 8106])
+            ("RVA_TO_PTR" variable (:constant-flag t) nil [8176 8186])
+            ("PTR_TO_RVA" variable (:constant-flag t) nil [8336 8346])
+            ("PTR_TO_OFFSET" variable (:constant-flag t) nil [8409 8422])
+            ("OFFSET_TO_PTR" variable (:constant-flag t) nil [8512 8525])
+            ("ROUND_UP" variable (:constant-flag t) nil [8611 8619])
+            ("ROUND_DOWN" variable (:constant-flag t) nil [8682 8692])
+            ("copy_executable_and_move_sections" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p_infile" variable
+                       (:pointer 1
+                        :type ("file_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10945 10965])
+                    ("p_outfile" variable
+                       (:pointer 1
+                        :type ("file_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10973 10994]))                  
+                :type "void")
+                nil [10898 26336])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [26349 26358])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26359 26371]))                  
+                :type "int")
+                nil [26339 28297]))          
+    :file "preprep.c"
+    :pointmax 28395
+    :fsize 28394
+    :lastmodtime '(19383 49281)
+    :unmatched-syntax '((punctuation 1364 . 1365))
+    :lexical-table 
+        '(("min" (spp-arg-list ("x" "y") 1400 . 1406) . ((semantic-list "(((x) < (y)) ? (x) : (y))" 1407 . 1432)))
+          ("PTR_TO_RVA" (spp-arg-list ("ptr") 8346 . 8351) . ((semantic-list "((DWORD)(ptr) - (DWORD) GetModuleHandle (NULL))" 8352 . 8399)))
+          ("OFFSET_TO_PTR" (spp-arg-list ("offset" "pfile_data") 8525 . 8545) . ((semantic-list "((pfile_data)->file_base + (DWORD)(offset))" 8558 . 8601)))
+          ("ROUND_UP" (spp-arg-list ("p" "align") 8619 . 8629) . ((semantic-list "(((DWORD)(p) + (align)-1) & ~((align)-1))" 8632 . 8673)))
+          ("RVA_TO_PTR" (spp-arg-list ("var" "section" "filedata") 8186 . 8208) . ((semantic-list "((void *)(RVA_TO_OFFSET(var,section) + (filedata)->file_base))" 8214 . 8276)))
+          ("RVA_TO_SECTION_OFFSET" (spp-arg-list ("rva" "section") 8106 . 8120) . ((semantic-list "((DWORD)(rva) - section->VirtualAddress)" 8126 . 8166)))
+          ("ROUND_DOWN" (spp-arg-list ("p" "align") 8692 . 8702) . ((semantic-list "((DWORD)(p) & ~((align)-1))" 8703 . 8730)))
+          ("RVA_TO_OFFSET" (spp-arg-list ("rva" "section") 7985 . 7999) . ((semantic-list "(section->PointerToRawData + ((DWORD)(rva) - section->VirtualAddress))" 8005 . 8075)))
+          ("OFFSET_TO_RVA" (spp-arg-list ("offset" "section") 7866 . 7883) . ((semantic-list "(section->VirtualAddress + ((DWORD)(offset) - section->PointerToRawData))" 7889 . 7962)))
+          ("max" (spp-arg-list ("x" "y") 1444 . 1450) . ((semantic-list "(((x) > (y)) ? (x) : (y))" 1451 . 1476)))
+          ("PTR_TO_OFFSET" (spp-arg-list ("ptr" "pfile_data") 8422 . 8439) . ((semantic-list "((unsigned char *)(ptr) - (pfile_data)->file_base)" 8452 . 8502)))
+          )
+
+    )
+   (semanticdb-table "ddeclient.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("windows.h" include (:system-flag t) nil [806 826])
+            ("ddeml.h" include (:system-flag t) nil [827 845])
+            ("stdlib.h" include (:system-flag t) nil [846 865])
+            ("stdio.h" include (:system-flag t) nil [866 884])
+            ("DdeCallback" function
+               (:arguments 
+                  ( ("uType" variable (:type ("UINT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [917 928])
+                    ("uFmt" variable (:type ("UINT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [929 939])
+                    ("hconv" variable (:type ("HCONV" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [940 952])
+                    ("hsz1" variable (:type ("HSZ" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [959 968])
+                    ("hsz2" variable (:type ("HSZ" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [969 978])
+                    ("hdata" variable (:type ("HDDEDATA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [979 994])
+                    ("dwData1" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1001 1015])
+                    ("dwData2" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1016 1030]))                  
+                :type ("CALLBACK" type (:type "class") nil nil))
+                nil [895 1062])
+            ("DdeCommand" variable (:constant-flag t) nil [1072 1082])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") nil nil)
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        nil nil))                  
+                :type "int")
+                nil [1216 2056]))          
+    :file "ddeclient.c"
+    :pointmax 2143
+    :fsize 2142
+    :lastmodtime '(19383 49279)
+    :unmatched-syntax '((symbol 886 . 894))
+    :lexical-table 
+        '(("DdeCommand" (spp-arg-list ("str") 1082 . 1087) . ((symbol "DdeClientTransaction" 1092 . 1112) (semantic-list "(str, strlen (str)+1, HConversation, (HSZ)NULL, \\
+		              CF_TEXT, XTYP_EXECUTE, 30000, NULL)" 1113 . 1214)))
+          )
+
+    )
+   (semanticdb-table "addsection.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [912 931])
+            ("stdio.h" include (:system-flag t) nil [932 950])
+            ("fcntl.h" include (:system-flag t) nil [951 969])
+            ("time.h" include (:system-flag t) nil [970 987])
+            ("windows.h" include (:system-flag t) nil [1062 1082])
+            ("PIMAGE_NT_HEADERS" function
+               (:arguments 
+                  ( ("pfnCheckSumMappedFile" variable
+                       (:pointer 1
+                        :type ("__stdcall" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1234 1268]))                  
+                :type "int")
+                nil [1215 1368])
+            ("min" variable (:constant-flag t) nil [1401 1404])
+            ("max" variable (:constant-flag t) nil [1445 1448])
+            ("file_data" type
+               (:typedef ("file_data" type
+                     (:members 
+                        ( ("name" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [1537 1557])
+                          ("size" variable (:type "unsigned long") (reparse-symbol classsubparts) [1562 1582])
+                          ("file" variable (:type ("HANDLE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1587 1607])
+                          ("file_mapping" variable (:type ("HANDLE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1612 1640])
+                          ("file_base" variable
+                             (:pointer 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [1645 1670]))                        
+                      :type "struct")
+                      nil nil)
+                :superclasses "file_data"
+                :type "typedef")
+                nil [1506 1683])
+            ("open_input_file" function
+               (:arguments 
+                  ( ("p_file" variable
+                       (:pointer 1
+                        :type ("file_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1706 1724])
+                    ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1725 1740]))                  
+                :type "int")
+                nil [1685 2451])
+            ("open_output_file" function
+               (:arguments 
+                  ( ("p_file" variable
+                       (:pointer 1
+                        :type ("file_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2475 2493])
+                    ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2494 2509])
+                    ("size" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2510 2529]))                  
+                :type "int")
+                nil [2453 3168])
+            ("close_file_data" function
+               (:arguments 
+                  ( ("p_file" variable
+                       (:pointer 1
+                        :type ("file_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3259 3277]))                  
+                :type "void")
+                nil [3237 3539])
+            ("get_unrounded_section_size" function
+               (:arguments 
+                  ( ("p_section" variable (:type ("PIMAGE_SECTION_HEADER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3644 3676]))                  
+                :type "unsigned long")
+                nil [3602 3922])
+            ("find_section" function
+               (:pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4019 4031])
+                    ("nt_header" variable
+                       (:pointer 1
+                        :type ("IMAGE_NT_HEADERS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4032 4061]))                  
+                :type ("IMAGE_SECTION_HEADER" type (:type "class") nil nil))
+                nil [3982 4323])
+            ("rva_to_section" function
+               (:pointer 1
+                :arguments 
+                  ( ("rva" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4465 4475])
+                    ("nt_header" variable
+                       (:pointer 1
+                        :type ("IMAGE_NT_HEADERS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4476 4505]))                  
+                :type ("IMAGE_SECTION_HEADER" type (:type "class") nil nil))
+                nil [4426 5241])
+            ("offset_to_section" function
+               (:pointer 1
+                :arguments 
+                  ( ("offset" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5389 5402])
+                    ("nt_header" variable
+                       (:pointer 1
+                        :type ("IMAGE_NT_HEADERS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5403 5432]))                  
+                :type ("IMAGE_SECTION_HEADER" type (:type "class") nil nil))
+                nil [5347 5762])
+            ("relocate_offset" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("offset" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6011 6024])
+                    ("src_nt_header" variable
+                       (:pointer 1
+                        :type ("IMAGE_NT_HEADERS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6028 6061])
+                    ("dst_nt_header" variable
+                       (:pointer 1
+                        :type ("IMAGE_NT_HEADERS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6065 6098]))                  
+                :type ("DWORD" type (:type "class") nil nil))
+                nil [5981 7075])
+            ("OFFSET_TO_RVA" variable (:constant-flag t) nil [7085 7098])
+            ("RVA_TO_OFFSET" variable (:constant-flag t) nil [7204 7217])
+            ("RVA_TO_SECTION_OFFSET" variable (:constant-flag t) nil [7317 7338])
+            ("PTR_TO_RVA" variable (:constant-flag t) nil [7458 7468])
+            ("PTR_TO_OFFSET" variable (:constant-flag t) nil [7531 7544])
+            ("OFFSET_TO_PTR" variable (:constant-flag t) nil [7634 7647])
+            ("ROUND_UP" variable (:constant-flag t) nil [7733 7741])
+            ("ROUND_DOWN" variable (:constant-flag t) nil [7804 7814])
+            ("copy_executable_and_add_section" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p_infile" variable
+                       (:pointer 1
+                        :type ("file_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7900 7920])
+                    ("p_outfile" variable
+                       (:pointer 1
+                        :type ("file_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7926 7947])
+                    ("new_section_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7953 7976])
+                    ("new_section_size" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7982 8005]))                  
+                :type "void")
+                nil [7855 14991])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [15004 15013])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15014 15026]))                  
+                :type "int")
+                nil [14994 17371]))          
+    :file "addsection.c"
+    :pointmax 17469
+    :fsize 17468
+    :lastmodtime '(19383 49278)
+    :unmatched-syntax '((punctuation 1368 . 1369))
+    :lexical-table 
+        '(("min" (spp-arg-list ("x" "y") 1404 . 1410) . ((semantic-list "(((x) < (y)) ? (x) : (y))" 1411 . 1436)))
+          ("PTR_TO_RVA" (spp-arg-list ("ptr") 7468 . 7473) . ((semantic-list "((DWORD)(ptr) - (DWORD) GetModuleHandle (NULL))" 7474 . 7521)))
+          ("OFFSET_TO_PTR" (spp-arg-list ("offset" "pfile_data") 7647 . 7667) . ((semantic-list "((pfile_data)->file_base + (DWORD)(offset))" 7680 . 7723)))
+          ("ROUND_UP" (spp-arg-list ("p" "align") 7741 . 7751) . ((semantic-list "(((DWORD)(p) + (align)-1) & ~((align)-1))" 7754 . 7795)))
+          ("RVA_TO_SECTION_OFFSET" (spp-arg-list ("rva" "section") 7338 . 7352) . ((semantic-list "((DWORD)(rva) - section->VirtualAddress)" 7358 . 7398)))
+          ("ROUND_DOWN" (spp-arg-list ("p" "align") 7814 . 7824) . ((semantic-list "((DWORD)(p) & ~((align)-1))" 7825 . 7852)))
+          ("RVA_TO_OFFSET" (spp-arg-list ("rva" "section") 7217 . 7231) . ((semantic-list "(section->PointerToRawData + ((DWORD)(rva) - section->VirtualAddress))" 7237 . 7307)))
+          ("OFFSET_TO_RVA" (spp-arg-list ("offset" "section") 7098 . 7115) . ((semantic-list "(section->VirtualAddress + ((DWORD)(offset) - section->PointerToRawData))" 7121 . 7194)))
+          ("max" (spp-arg-list ("x" "y") 1448 . 1454) . ((semantic-list "(((x) > (y)) ? (x) : (y))" 1455 . 1480)))
+          ("PTR_TO_OFFSET" (spp-arg-list ("ptr" "pfile_data") 7544 . 7561) . ((semantic-list "((unsigned char *)(ptr) - (pfile_data)->file_base)" 7574 . 7624)))
+          )
+
+    )
+   (semanticdb-table "addpm.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_WIN32_IE" variable (:constant-flag t) nil [1622 1631])
+            ("COBJMACROS" variable (:constant-flag t) nil [1697 1707])
+            ("windows.h" include (:system-flag t) nil [1711 1731])
+            ("shlobj.h" include (:system-flag t) nil [1732 1751])
+            ("ddeml.h" include (:system-flag t) nil [1752 1770])
+            ("stdlib.h" include (:system-flag t) nil [1771 1790])
+            ("stdio.h" include (:system-flag t) nil [1791 1809])
+            ("malloc.h" include (:system-flag t) nil [1810 1829])
+            ("DdeCallback" function
+               (:arguments 
+                  ( ("uType" variable (:type ("UINT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1862 1873])
+                    ("uFmt" variable (:type ("UINT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1874 1884])
+                    ("hconv" variable (:type ("HCONV" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1885 1897])
+                    ("hsz1" variable (:type ("HSZ" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1904 1913])
+                    ("hsz2" variable (:type ("HSZ" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1914 1923])
+                    ("hdata" variable (:type ("HDDEDATA" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1924 1939])
+                    ("dwData1" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1946 1960])
+                    ("dwData2" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1961 1975]))                  
+                :type ("CALLBACK" type (:type "class") nil nil))
+                nil [1840 2007])
+            ("DdeCommand" variable (:constant-flag t) nil [2017 2027])
+            ("REG_ROOT" variable (:constant-flag t) nil [2168 2176])
+            ("REG_GTK" variable (:constant-flag t) nil [2208 2215])
+            ("REG_APP_PATH" variable (:constant-flag t) nil [2245 2257])
+            ("entry" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2356 2367])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2370 2382]))                  
+                :type "struct")
+                nil [2332 2837])
+            ("env_vars" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"emacs_dir\", NULL},
+  {\"EMACSLOADPATH\", \"%emacs_dir%/site-lisp;%emacs_dir%/../site-lisp;%emacs_dir%/lisp;%emacs_dir%/leim\"},
+  {\"SHELL\", \"%emacs_dir%/bin/cmdproxy.exe\"},
+  {\"EMACSDATA\", \"%emacs_dir%/etc\"},
+  {\"EMACSPATH\", \"%emacs_dir%/bin\"},
+  /* We no longer set INFOPATH because Info-default-directory-list
+     is then ignored.  */
+  /*  {\"INFOPATH\", \"%emacs_dir%/info\"},  */
+  {\"EMACSDOC\", \"%emacs_dir%/etc\"},
+  {\"TERM\", \"cmd\"}
+}"
+                :type ("entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2332 2837])
+            ("add_registry" function
+               (:arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type ("BOOL" type (:type "class") nil nil))
+                nil [2839 6270])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") nil nil)
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        nil nil))                  
+                :type "int")
+                nil [6272 11010]))          
+    :file "addpm.c"
+    :pointmax 11097
+    :fsize 11096
+    :lastmodtime '(19383 49278)
+    :unmatched-syntax '((symbol 1831 . 1839))
+    :lexical-table 
+        '(("REG_GTK" . ((string "\"SOFTWARE\\\\GTK\\\\2.0\"" 2216 . 2236)))
+          ("_WIN32_IE" . ((number "0x400" 1632 . 1637)))
+          ("DdeCommand" (spp-arg-list ("str") 2027 . 2032) . ((symbol "DdeClientTransaction" 2037 . 2057) (semantic-list "(str, strlen (str)+1, conversation, (HSZ)NULL, \\
+		              CF_TEXT, XTYP_EXECUTE, 30000, NULL)" 2058 . 2158)))
+          ("REG_ROOT" . ((string "\"SOFTWARE\\\\GNU\\\\Emacs\"" 2177 . 2199)))
+          ("COBJMACROS" . ((number "1" 1708 . 1709)))
+          ("REG_APP_PATH" . ((string "\"SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\App Paths\\\\emacs.exe\"" 2262 . 2330)))
+          )
+
+    )
+   )
+  :file "!home!xhyang!emacs-23.2!nt!semantic.cache"
+  :semantic-tag-version "2.0pre7"
+  :semanticdb-version "2.0pre7"
+  )

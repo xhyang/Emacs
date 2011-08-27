@@ -1,0 +1,10 @@
+/home/xhyang/3g-board/u-boot-1.3.4/drivers/mtd/nand/nand.c
+/home/xhyang/3g-board/u-boot-1.3.4/drivers/mtd/nand/#nand.c#
+/home/xhyang/3g-board/u-boot-1.3.4/cpu/s3c24xx/nand.c
+/home/xhyang/3g-board/u-boot-1.3.4/cpu/s3c24xx/#nand.c#
+/home/xhyang/3g-board/u-boot-1.3.4/drivers/mtd/nand/nand_base.c
+/home/xhyang/3g-board/u-boot-1.3.4/drivers/mtd/nand/#nand_base.c#
+/home/xhyang/3g-board/u-boot-1.3.4/lib_arm/board.c
+/home/xhyang/3g-board/u-boot-1.3.4/lib_arm/#board.c#
+/home/xhyang/3g-board/u-boot-1.3.4/include/linux/mtd/nand.h
+/home/xhyang/3g-board/u-boot-1.3.4/include/linux/mtd/#nand.h#

@@ -1,0 +1,120 @@
+;; Object asm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "asm/"
+  :tables (list 
+   (semanticdb-table "socket.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_ASM_SOCKET_H" variable (:constant-flag t) nil [31 44])
+            ("asm/sockios.h" include (:system-flag t) nil [46 70])
+            ("SOL_SOCKET" variable (:constant-flag t) nil [104 114])
+            ("SO_DEBUG" variable (:constant-flag t) nil [126 134])
+            ("SO_REUSEADDR" variable (:constant-flag t) nil [145 157])
+            ("SO_TYPE" variable (:constant-flag t) nil [168 175])
+            ("SO_ERROR" variable (:constant-flag t) nil [187 195])
+            ("SO_DONTROUTE" variable (:constant-flag t) nil [206 218])
+            ("SO_BROADCAST" variable (:constant-flag t) nil [229 241])
+            ("SO_SNDBUF" variable (:constant-flag t) nil [252 261])
+            ("SO_RCVBUF" variable (:constant-flag t) nil [272 281])
+            ("SO_SNDBUFFORCE" variable (:constant-flag t) nil [292 306])
+            ("SO_RCVBUFFORCE" variable (:constant-flag t) nil [318 332])
+            ("SO_KEEPALIVE" variable (:constant-flag t) nil [344 356])
+            ("SO_OOBINLINE" variable (:constant-flag t) nil [367 379])
+            ("SO_NO_CHECK" variable (:constant-flag t) nil [391 402])
+            ("SO_PRIORITY" variable (:constant-flag t) nil [414 425])
+            ("SO_LINGER" variable (:constant-flag t) nil [437 446])
+            ("SO_BSDCOMPAT" variable (:constant-flag t) nil [458 470])
+            ("SO_PASSCRED" variable (:constant-flag t) nil [520 531])
+            ("SO_PEERCRED" variable (:constant-flag t) nil [543 554])
+            ("SO_RCVLOWAT" variable (:constant-flag t) nil [566 577])
+            ("SO_SNDLOWAT" variable (:constant-flag t) nil [589 600])
+            ("SO_RCVTIMEO" variable (:constant-flag t) nil [612 623])
+            ("SO_SNDTIMEO" variable (:constant-flag t) nil [635 646])
+            ("SO_SECURITY_AUTHENTICATION" variable (:constant-flag t) nil [728 754])
+            ("SO_SECURITY_ENCRYPTION_TRANSPORT" variable (:constant-flag t) nil [767 799])
+            ("SO_SECURITY_ENCRYPTION_NETWORK" variable (:constant-flag t) nil [811 841])
+            ("SO_BINDTODEVICE" variable (:constant-flag t) nil [855 870])
+            ("SO_ATTACH_FILTER" variable (:constant-flag t) nil [906 922])
+            ("SO_DETACH_FILTER" variable (:constant-flag t) nil [941 957])
+            ("SO_PEERNAME" variable (:constant-flag t) nil [977 988])
+            ("SO_TIMESTAMP" variable (:constant-flag t) nil [1001 1013])
+            ("SCM_TIMESTAMP" variable (:constant-flag t) nil [1026 1039])
+            ("SO_ACCEPTCONN" variable (:constant-flag t) nil [1063 1076])
+            ("SO_PEERSEC" variable (:constant-flag t) nil [1090 1100])
+            ("SO_PASSSEC" variable (:constant-flag t) nil [1113 1123]))          
+    :file "socket.h"
+    :pointmax 1156
+    :fsize 1155
+    :lastmodtime '(17913 55894)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SO_RCVBUFFORCE" . ((number "33" 333 . 335)))
+          ("SO_BSDCOMPAT" . ((number "14" 471 . 473)))
+          ("SO_DETACH_FILTER" . ((number "27" 965 . 967)))
+          ("SO_ACCEPTCONN" . ((number "30" 1078 . 1080)))
+          ("SO_BROADCAST" . ((number "6" 242 . 243)))
+          ("SO_KEEPALIVE" . ((number "9" 357 . 358)))
+          ("SO_RCVLOWAT" . ((number "18" 578 . 580)))
+          ("SO_PASSCRED" . ((number "16" 532 . 534)))
+          ("SO_PEERCRED" . ((number "17" 555 . 557)))
+          ("SO_SECURITY_AUTHENTICATION" . ((number "22" 756 . 758)))
+          ("SCM_TIMESTAMP" . ((symbol "SO_TIMESTAMP" 1041 . 1053)))
+          ("SO_OOBINLINE" . ((number "10" 380 . 382)))
+          ("SO_LINGER" . ((number "13" 447 . 449)))
+          ("SO_RCVTIMEO" . ((number "20" 624 . 626)))
+          ("SO_TIMESTAMP" . ((number "29" 1015 . 1017)))
+          ("SO_PEERSEC" . ((number "31" 1102 . 1104)))
+          ("SO_PASSSEC" . ((number "34" 1125 . 1127)))
+          ("SOL_SOCKET" . ((number "1" 115 . 116)))
+          ("SO_SNDBUF" . ((number "7" 262 . 263)))
+          ("SO_BINDTODEVICE" . ((number "25" 871 . 873)))
+          ("SO_DONTROUTE" . ((number "5" 219 . 220)))
+          ("SO_SECURITY_ENCRYPTION_TRANSPORT" . ((number "23" 800 . 802)))
+          ("SO_TYPE" . ((number "3" 177 . 178)))
+          ("SO_SNDBUFFORCE" . ((number "32" 307 . 309)))
+          ("SO_SNDLOWAT" . ((number "19" 601 . 603)))
+          ("SO_ATTACH_FILTER" . ((number "26" 930 . 932)))
+          ("SO_REUSEADDR" . ((number "2" 158 . 159)))
+          ("SO_NO_CHECK" . ((number "11" 403 . 405)))
+          ("SO_PRIORITY" . ((number "12" 426 . 428)))
+          ("SO_SNDTIMEO" . ((number "21" 647 . 649)))
+          ("SO_PEERNAME" . ((number "28" 990 . 992)))
+          ("SO_DEBUG" . ((number "1" 135 . 136)))
+          ("SO_ERROR" . ((number "4" 196 . 197)))
+          ("SO_RCVBUF" . ((number "8" 282 . 283)))
+          ("_ASM_SOCKET_H")
+          ("SO_SECURITY_ENCRYPTION_NETWORK" . ((number "24" 843 . 845)))
+          )
+
+    )
+   (semanticdb-table "sockios.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__ARCH_I386_SOCKIOS__" variable (:constant-flag t) nil [39 60])
+            ("FIOSETOWN" variable (:constant-flag t) nil [108 117])
+            ("SIOCSPGRP" variable (:constant-flag t) nil [134 143])
+            ("FIOGETOWN" variable (:constant-flag t) nil [159 168])
+            ("SIOCGPGRP" variable (:constant-flag t) nil [184 193])
+            ("SIOCATMARK" variable (:constant-flag t) nil [209 219])
+            ("SIOCGSTAMP" variable (:constant-flag t) nil [235 245]))          
+    :file "sockios.h"
+    :pointmax 278
+    :fsize 277
+    :lastmodtime '(17913 55894)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SIOCSPGRP" . ((number "0x8902" 144 . 150)))
+          ("SIOCGPGRP" . ((number "0x8904" 194 . 200)))
+          ("SIOCGSTAMP" . ((number "0x8906" 246 . 252)))
+          ("FIOGETOWN" . ((number "0x8903" 169 . 175)))
+          ("SIOCATMARK" . ((number "0x8905" 220 . 226)))
+          ("FIOSETOWN" . ((number "0x8901" 119 . 125)))
+          ("__ARCH_I386_SOCKIOS__")
+          )
+
+    )
+   )
+  :file "!usr!include!asm!semantic.cache"
+  :semantic-tag-version "2.0pre7"
+  :semanticdb-version "2.0pre7"
+  )

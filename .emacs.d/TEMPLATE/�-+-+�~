@@ -1,0 +1,4 @@
+#if !defined(@@@)
+#define @@@
+
+#endif

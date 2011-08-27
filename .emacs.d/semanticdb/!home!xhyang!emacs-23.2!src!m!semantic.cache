@@ -1,0 +1,46 @@
+;; Object m/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "m/"
+  :tables (list 
+   (semanticdb-table "alpha.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LP64" variable (:constant-flag t) nil [1091 1096])
+            ("NO_ARG_ARRAY" variable (:constant-flag t) nil [1450 1462])
+            ("EXPLICIT_SIGN_EXTEND" variable (:constant-flag t) nil [1833 1853])
+            ("LOAD_AVE_TYPE" variable (:constant-flag t) nil [1919 1932])
+            ("LOAD_AVE_CVT" variable (:constant-flag t) nil [2022 2034])
+            ("TEXT_START" variable (:constant-flag t) nil [3366 3376])
+            ("DATA_START" variable (:constant-flag t) nil [3400 3410])
+            ("UNEXEC" variable (:constant-flag t) nil [3477 3483])
+            ("LINUX_SBRK_BUG" variable (:constant-flag t) nil [3622 3636])
+            ("NO_TERMIO" variable (:constant-flag t) nil [3778 3787])
+            ("COFF" variable (:constant-flag t) nil [3889 3893])
+            ("DBL_MIN_REPLACEMENT" variable (:constant-flag t) nil [4184 4203]))          
+    :file "alpha.h"
+    :pointmax 4314
+    :fsize 4313
+    :lastmodtime '(19383 49276)
+    :unmatched-syntax '((punctuation 1166 . 1167) (punctuation 1165 . 1166) (punctuation 1162 . 1163) (symbol 1160 . 1162) (punctuation 1158 . 1159) (punctuation 1157 . 1158) (number 1154 . 1155) (punctuation 1153 . 1154) (number 1152 . 1153) (symbol 1148 . 1151) (symbol 1145 . 1147))
+    :lexical-table 
+        '(("LOAD_AVE_TYPE" . ((LONG "long" 1933 . 1937)))
+          ("COFF")
+          ("DATA_START" . ((number "0x140000000" 3414 . 3425)))
+          ("_LP64")
+          ("LINUX_SBRK_BUG")
+          ("NO_ARG_ARRAY")
+          ("LOAD_AVE_CVT" (spp-arg-list ("x") 2034 . 2037) . ((semantic-list "(int)" 2038 . 2043) (semantic-list "(((double) (x)) * 100.0 / FSCALE)" 2044 . 2077)))
+          ("TEXT_START" . ((number "0x120000000" 3380 . 3391)))
+          ("UNEXEC" . 
+              ((symbol "unexalpha" 3484 . 3493) (punctuation "." 3493 . 3494) (symbol "o" 3494 . 3495)))
+          ("DBL_MIN_REPLACEMENT" . ((number "2.2250738585072019e-308" 4204 . 4227)))
+          ("NO_TERMIO")
+          ("EXPLICIT_SIGN_EXTEND")
+          )
+
+    )
+   )
+  :file "!home!xhyang!emacs-23.2!src!m!semantic.cache"
+  :semantic-tag-version "2.0pre7"
+  :semanticdb-version "2.0pre7"
+  )

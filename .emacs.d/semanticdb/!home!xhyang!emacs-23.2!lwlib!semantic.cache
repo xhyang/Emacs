@@ -1,0 +1,2555 @@
+;; Object lwlib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lwlib/"
+  :tables (list 
+   (semanticdb-table "lwlib-Xm.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unistd.h" include (:system-flag t) nil [1066 1085])
+            ("stdio.h" include (:system-flag t) nil [1086 1104])
+            ("setjmp.h" include (:system-flag t) nil [1105 1124])
+            ("X11/StringDefs.h" include (:system-flag t) nil [1126 1153])
+            ("X11/IntrinsicP.h" include (:system-flag t) nil [1154 1181])
+            ("X11/ObjectP.h" include (:system-flag t) nil [1182 1206])
+            ("X11/CoreP.h" include (:system-flag t) nil [1207 1229])
+            ("X11/CompositeP.h" include (:system-flag t) nil [1230 1257])
+            ("../src/lisp.h" include nil nil [1259 1283])
+            ("lwlib-Xm.h" include nil nil [1285 1306])
+            ("lwlib-utils.h" include nil nil [1307 1331])
+            ("Xm/BulletinB.h" include (:system-flag t) nil [1333 1358])
+            ("Xm/CascadeB.h" include (:system-flag t) nil [1359 1383])
+            ("Xm/CascadeBG.h" include (:system-flag t) nil [1384 1409])
+            ("Xm/DrawingA.h" include (:system-flag t) nil [1410 1434])
+            ("Xm/FileSB.h" include (:system-flag t) nil [1435 1457])
+            ("Xm/Label.h" include (:system-flag t) nil [1458 1479])
+            ("Xm/List.h" include (:system-flag t) nil [1480 1500])
+            ("Xm/MainW.h" include (:system-flag t) nil [1501 1522])
+            ("Xm/MenuShell.h" include (:system-flag t) nil [1523 1548])
+            ("Xm/MessageB.h" include (:system-flag t) nil [1549 1573])
+            ("Xm/PanedW.h" include (:system-flag t) nil [1574 1596])
+            ("Xm/PushB.h" include (:system-flag t) nil [1597 1618])
+            ("Xm/PushBG.h" include (:system-flag t) nil [1619 1641])
+            ("Xm/ArrowB.h" include (:system-flag t) nil [1642 1664])
+            ("Xm/SelectioB.h" include (:system-flag t) nil [1665 1690])
+            ("Xm/Text.h" include (:system-flag t) nil [1691 1711])
+            ("Xm/TextF.h" include (:system-flag t) nil [1712 1733])
+            ("Xm/ToggleB.h" include (:system-flag t) nil [1734 1757])
+            ("Xm/ToggleBG.h" include (:system-flag t) nil [1758 1782])
+            ("Xm/RowColumn.h" include (:system-flag t) nil [1783 1808])
+            ("Xm/ScrolledW.h" include (:system-flag t) nil [1809 1834])
+            ("Xm/Separator.h" include (:system-flag t) nil [1835 1860])
+            ("Xm/DialogS.h" include (:system-flag t) nil [1861 1884])
+            ("Xm/Form.h" include (:system-flag t) nil [1885 1905])
+            ("P_" variable (:constant-flag t) nil [1968 1970])
+            ("do_call_type" type
+               (:members 
+                  ( ("pre_activate" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2027 2040])
+                    ("selection" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2041 2051])
+                    ("no_selection" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2052 2065])
+                    ("post_activate" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2066 2081]))                  
+                :type "enum")
+                nil [2007 2082])
+            ("destroyed_instance" type
+               (:typedef ("_destroyed_instance" type
+                     (:members 
+                        ( ("name" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [2170 2182])
+                          ("type" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [2185 2197])
+                          ("widget" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2200 2215])
+                          ("parent" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2218 2232])
+                          ("pop_up_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2235 2252])
+                          ("next" variable
+                             (:pointer 1
+                              :type ("_destroyed_instance" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [2255 2288]))                        
+                      :type "struct")
+                      nil nil)
+                :superclasses "_destroyed_instance"
+                :type "typedef")
+                nil [2131 2310])
+            ("make_destroyed_instance" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("destroyed_instance" type (:type "class") nil nil))
+                nil [2312 2424])
+            ("free_destroyed_instance" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("destroyed_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [2425 2488])
+            ("first_child" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [2489 2522])
+            ("lw_motif_widget_p" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [2523 2563])
+            ("resource_motif_string" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("XmString" type (:type "class") nil nil))
+                nil [2564 2624])
+            ("destroy_all_children" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [2625 2677])
+            ("xm_update_label" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [2678 2755])
+            ("xm_update_list" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [2756 2832])
+            ("xm_update_pushbutton" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [2833 2925])
+            ("xm_update_cascadebutton" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [2926 3017])
+            ("xm_update_toggle" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3018 3096])
+            ("xm_update_radiobox" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3097 3177])
+            ("make_menu_in_widget" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3178 3273])
+            ("update_one_menu_entry" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3274 3377])
+            ("xm_update_menu" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3378 3467])
+            ("xm_update_text" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3468 3544])
+            ("xm_update_text_field" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3545 3637])
+            ("xm_update_one_value" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3638 3712])
+            ("activate_button" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3713 3777])
+            ("make_dialog" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [3778 3898])
+            ("find_matching_instance" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("destroyed_instance" type (:type "class") nil nil))
+                nil [3899 3973])
+            ("mark_dead_instance_destroyed" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3974 4051])
+            ("recenter_widget" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4052 4094])
+            ("recycle_instance" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("destroyed_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [4095 4153])
+            ("xm_create_dialog" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [4154 4202])
+            ("make_menubar" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [4203 4254])
+            ("remove_grabs" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4255 4316])
+            ("make_popup_menu" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [4317 4371])
+            ("make_main" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [4372 4420])
+            ("xm_destroy_instance" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4421 4470])
+            ("xm_popup_menu" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("XEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4471 4514])
+            ("set_min_dialog_size" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4515 4561])
+            ("do_call" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("do_call_type" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4562 4626])
+            ("xm_generic_callback" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4627 4695])
+            ("xm_nosel_callback" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4696 4762])
+            ("xm_pull_down_callback" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4763 4833])
+            ("xm_pop_down_callback" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4834 4903])
+            ("xm_set_keyboard_focus" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4904 4953])
+            ("xm_set_main_areas" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4954 5007])
+            ("xm_internal_update_other_instances" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [5008 5101])
+            ("xm_arm_callback" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [5102 5166])
+            ("all_destroyed_instances" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL;"
+                :type ("destroyed_instance" type (:type "class") nil nil))
+                nil [5852 5910])
+            ("make_destroyed_instance" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("type" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("parent" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("pop_up_p" variable (:type ("Boolean" type (:type "class") nil nil)) nil nil))                  
+                :type ("destroyed_instance" type (:type "class") nil nil))
+                nil [5912 6411])
+            ("free_destroyed_instance" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("destroyed_instance" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [6413 6567])
+            ("first_child" function
+               (:arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [6600 6711])
+            ("lw_motif_widget_p" function
+               (:arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [6713 6909])
+            ("resource_motif_string" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type ("XmString" type (:type "class") nil nil))
+                nil [6911 7442])
+            ("destroy_all_children" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("first_child_to_destroy" variable (:type "int") nil nil))                  
+                :type "void")
+                nil [7538 8685])
+            ("xm_arm_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil)
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [8957 9793])
+            ("xm_update_label" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [10396 11455])
+            ("xm_update_list" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [11479 12063])
+            ("xm_update_pushbutton" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [12090 12424])
+            ("xm_update_cascadebutton" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [12426 12770])
+            ("xm_update_toggle" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [12806 13176])
+            ("xm_update_radiobox" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [13178 14499])
+            ("make_menu_in_widget" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil)
+                    ("keep_first_children" variable (:type "int") nil nil))                  
+                :type "void")
+                nil [14632 19760])
+            ("update_one_menu_entry" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil)
+                    ("deep_p" variable (:type ("Boolean" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [19762 22685])
+            ("xm_update_menu" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil)
+                    ("deep_p" variable (:type ("Boolean" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [22687 24560])
+            ("xm_update_text" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [24591 25069])
+            ("xm_update_text_field" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [25071 25560])
+            ("xm_update_one_widget" function
+               (:arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil)
+                    ("deep_p" variable (:type ("Boolean" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [25593 27213])
+            ("xm_update_one_value" function
+               (:arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [27245 29324])
+            ("activate_button" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("closure" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil)
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [29688 29908])
+            ("dialog_key_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("closure" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil)
+                    ("event" variable
+                       (:pointer 1
+                        :type ("XEvent" type (:type "class") nil nil))
+                        nil nil)
+                    ("continue_to_dispatch" variable
+                       (:pointer 1
+                        :type ("Boolean" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [30009 30575])
+            ("make_dialog" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("parent" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("pop_up_p" variable (:type ("Boolean" type (:type "class") nil nil)) nil nil)
+                    ("shell_title" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("icon_name" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("text_input_slot" variable (:type ("Boolean" type (:type "class") nil nil)) nil nil)
+                    ("radio_box" variable (:type ("Boolean" type (:type "class") nil nil)) nil nil)
+                    ("list" variable (:type ("Boolean" type (:type "class") nil nil)) nil nil)
+                    ("left_buttons" variable (:type "int") nil nil)
+                    ("right_buttons" variable (:type "int") nil nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [30591 40184])
+            ("find_matching_instance" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil))                  
+                :type ("destroyed_instance" type (:type "class") nil nil))
+                nil [40186 41037])
+            ("mark_dead_instance_destroyed" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("closure" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil)
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [41039 41272])
+            ("recenter_widget" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [41274 42260])
+            ("recycle_instance" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("destroyed_instance" type (:type "class") nil nil))
+                        nil nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [42262 43268])
+            ("xm_create_dialog" function
+               (:arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [43270 44986])
+            ("make_menubar" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [45107 45338])
+            ("remove_grabs" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("shell" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("closure" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil)
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [45340 45562])
+            ("make_popup_menu" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [45564 46063])
+            ("make_main" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [46065 46397])
+            ("xm_creation_table" variable
+               (:dereference 1
+                :default-value "{
+  {\"menubar\", 			make_menubar},
+  {\"popup\",			make_popup_menu},
+  {\"main\",			make_main},
+#ifdef ENERGIZE
+  {\"project_p_sheet\",		make_project_p_sheet},
+  {\"debugger_p_sheet\",		make_debugger_p_sheet},
+  {\"breaklist_psheet\",		make_breaklist_p_sheet},
+  {\"leb_psheet\",       		make_le_browser_p_sheet},
+  {\"class_browser_psheet\",	make_class_browser_p_sheet},
+  {\"ctree_browser_psheet\",	make_call_browser_p_sheet},
+  {\"build\",			make_build_dialog},
+  {\"editmode\",			make_editmode_dialog},
+  {\"search\",			make_search_dialog},
+  {\"project_display\",		make_project_display_dialog},
+#endif /* ENERGIZE */
+  {NULL, NULL}
+}"
+                :type ("widget_creation_entry" type (:type "class") nil nil))
+                nil [48921 49580])
+            ("xm_destroy_instance" function
+               (:arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [49614 50766])
+            ("xm_popup_menu" function
+               (:arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("event" variable
+                       (:pointer 1
+                        :type ("XEvent" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [50789 52407])
+            ("set_min_dialog_size" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [52409 52628])
+            ("xm_pop_instance" function
+               (:arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("up" variable (:type ("Boolean" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [52630 53157])
+            ("do_call" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("closure" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil)
+                    ("type" variable (:type ("do_call_type" type (:type "enum") nil nil)) nil nil))                  
+                :type "void")
+                nil [53183 54349])
+            ("xm_internal_update_other_instances" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("closure" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil)
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [54646 55031])
+            ("xm_generic_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("closure" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil)
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [55033 55274])
+            ("xm_nosel_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("closure" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil)
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [55276 55970])
+            ("xm_pull_down_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("closure" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil)
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [55972 56354])
+            ("xm_pop_down_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("closure" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil)
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [56609 56967])
+            ("xm_set_keyboard_focus" function
+               (:arguments 
+                  ( ("parent" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("w" variable (:type ("Widget" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [57000 57140])
+            ("xm_set_main_areas" function
+               (:arguments 
+                  ( ("parent" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("menubar" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("work_area" variable (:type ("Widget" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [57189 57515])
+            ("xm_manage_resizing" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("flag" variable (:type ("Boolean" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [57570 57695]))          
+    :file "lwlib-Xm.c"
+    :pointmax 57782
+    :fsize 57781
+    :lastmodtime '(19383 49279)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("P_" (spp-arg-list ("X") 1970 . 1973) . ((symbol "X" 1974 . 1975)))
+          )
+
+    )
+   (semanticdb-table "lwlib.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("setjmp.h" include (:system-flag t) nil [1049 1068])
+            ("../src/lisp.h" include nil nil [1069 1093])
+            ("sys/types.h" include (:system-flag t) nil [1095 1117])
+            ("stdio.h" include (:system-flag t) nil [1118 1136])
+            ("ctype.h" include (:system-flag t) nil [1137 1155])
+            ("lwlib-int.h" include nil nil [1156 1178])
+            ("lwlib-utils.h" include nil nil [1179 1203])
+            ("X11/StringDefs.h" include (:system-flag t) nil [1204 1231])
+            ("lwlib-Xlw.h" include nil nil [1257 1279])
+            ("lwlib-Xm.h" include nil nil [1311 1332])
+            ("X11/Xaw/Paned.h" include (:system-flag t) nil [1539 1565])
+            ("lwlib-Xaw.h" include nil nil [1590 1612])
+            ("all_widget_info" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL;"
+                :type ("widget_info" type (:type "class") nil nil))
+                nil [1855 1898])
+            ("lwlib_toolkit_type" variable
+               (:pointer 1
+                :default-value "\"lucid\""
+                :type "char")
+                nil [1959 1994])
+            ("merge_widget_value" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("widget_value" type (:type "class") nil nil))
+                nil [2003 2113])
+            ("instantiate_widget_instance" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [2114 2179])
+            ("my_strcasecmp" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [2180 2227])
+            ("safe_free_str" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [2228 2268])
+            ("free_widget_value_tree" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [2269 2326])
+            ("copy_widget_value_tree" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("change_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("widget_value" type (:type "class") nil nil))
+                nil [2327 2413])
+            ("allocate_widget_info" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("lw_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("lw_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("lw_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("lw_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("widget_info" type (:type "class") nil nil))
+                nil [2414 2588])
+            ("free_widget_info" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [2589 2639])
+            ("mark_widget_destroyed" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [2640 2710])
+            ("allocate_widget_instance" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("widget_instance" type (:type "class") nil nil))
+                nil [2711 2810])
+            ("free_widget_instance" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [2811 2869])
+            ("get_widget_info" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("widget_info" type (:type "class") nil nil))
+                nil [2870 2931])
+            ("get_widget_instance" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("widget_instance" type (:type "class") nil nil))
+                nil [2932 2999])
+            ("find_instance" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("widget_instance" type (:type "class") nil nil))
+                nil [3000 3071])
+            ("safe_strcmp" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [3072 3121])
+            ("name_to_widget" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [3122 3184])
+            ("set_one_value" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3185 3261])
+            ("update_one_widget_instance" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3262 3335])
+            ("update_all_widget_values" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3336 3403])
+            ("initialize_widget_instance" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3404 3468])
+            ("find_in_table" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_creation_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("widget_creation_function" type (:type "class") nil nil))
+                nil [3469 3554])
+            ("dialog_spec_p" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [3555 3598])
+            ("destroy_one_instance" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3599 3657])
+            ("lw_pop_all_widgets" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3658 3714])
+            ("get_one_value" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [3715 3785])
+            ("show_one_widget_busy" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3786 3842])
+            ("lwlib_memset" function
+               (:arguments 
+                  ( ("address" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("value" variable (:type "int") nil nil)
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [3844 4011])
+            ("lwlib_bcopy" function
+               (:arguments 
+                  ( ("from" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("to" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("length" variable (:type "int") nil nil))                  
+                :type "void")
+                nil [4013 4163])
+            ("safe_strdup" function
+               (:pointer 1
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type "char")
+                nil [4225 4422])
+            ("my_strcasecmp" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s2" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("s1" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type "int")
+                nil [4476 4767])
+            ("safe_free_str" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type "void")
+                nil [4769 4828])
+            ("widget_value_free_list" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "0"
+                :type ("widget_value" type (:type "class") nil nil))
+                nil [4830 4878])
+            ("malloc_cpt" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [4879 4905])
+            ("malloc_widget_value" function
+               (:pointer 1
+                :type ("widget_value" type (:type "class") nil nil))
+                nil [4907 5283])
+            ("free_widget_value" function
+               (:arguments 
+                  ( ("wv" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [5406 5750])
+            ("free_widget_value_tree" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wv" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [5752 6404])
+            ("copy_widget_value_tree" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil)
+                    ("change" variable (:type ("change_type" type (:type "class") nil nil)) nil nil))                  
+                :type ("widget_value" type (:type "class") nil nil))
+                nil [6406 7228])
+            ("allocate_widget_info" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("type" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil)
+                    ("pre_activate_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) nil nil)
+                    ("selection_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) nil nil)
+                    ("post_activate_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) nil nil)
+                    ("highlight_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) nil nil))                  
+                :type ("widget_info" type (:type "class") nil nil))
+                nil [7230 8077])
+            ("free_widget_info" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("widget_info" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [8079 8319])
+            ("mark_widget_destroyed" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("closure" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil)
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [8321 8607])
+            ("allocate_widget_instance" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("widget_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8888 8906])
+                    ("parent" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8907 8921])
+                    ("pop_up_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8922 8939]))                  
+                :type ("widget_instance" type (:type "class") nil nil))
+                nil [8819 9517])
+            ("free_widget_instance" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [9519 9689])
+            ("get_widget_info" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9747 9759])
+                    ("remove_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9760 9777]))                  
+                :type ("widget_info" type (:type "class") nil nil))
+                nil [9691 10195])
+            ("lw_get_widget_info" function
+               (:pointer 1
+                :arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) nil nil))                  
+                :type ("widget_info" type (:type "class") nil nil))
+                nil [10327 10420])
+            ("get_widget_instance" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10486 10500])
+                    ("remove_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10501 10518]))                  
+                :type ("widget_instance" type (:type "class") nil nil))
+                nil [10422 11079])
+            ("lw_get_widget_instance" function
+               (:pointer 1
+                :arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil))                  
+                :type ("widget_instance" type (:type "class") nil nil))
+                nil [11200 11319])
+            ("find_instance" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11378 11390])
+                    ("parent" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11391 11405])
+                    ("pop_up_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11406 11423]))                  
+                :type ("widget_instance" type (:type "class") nil nil))
+                nil [11321 11811])
+            ("safe_strcmp" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s1" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("s2" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [11855 12015])
+            ("EXPLAIN" variable (:constant-flag t) nil [12598 12605])
+            ("merge_widget_value" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("val1" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil)
+                    ("val2" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil)
+                    ("level" variable (:type "int") nil nil)
+                    ("change_p" variable
+                       (:pointer 1
+                        :type "int")
+                        nil nil))                  
+                :type ("widget_value" type (:type "class") nil nil))
+                nil [12643 16993])
+            ("name_to_widget" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [17025 17546])
+            ("set_one_value" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17593 17619])
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17620 17638])
+                    ("deep_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17639 17654]))                  
+                :type "void")
+                nil [17548 18269])
+            ("update_one_widget_instance" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18329 18355])
+                    ("deep_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18356 18371]))                  
+                :type "void")
+                nil [18271 18717])
+            ("update_all_widget_values" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("widget_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18775 18793])
+                    ("deep_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18794 18809]))                  
+                :type "void")
+                nil [18719 19161])
+            ("lw_modify_all_widgets" function
+               (:arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19208 19220])
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19221 19239])
+                    ("deep_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19240 19255]))                  
+                :type "int")
+                nil [19163 20527])
+            ("initialize_widget_instance" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [20559 20893])
+            ("find_in_table" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("type" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("table" variable
+                       (:pointer 1
+                        :type ("widget_creation_entry" type (:type "class") nil nil))
+                        nil nil))                  
+                :type ("widget_creation_function" type (:type "class") nil nil))
+                nil [20896 21164])
+            ("dialog_spec_p" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [21166 21915])
+            ("instantiate_widget_instance" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [21917 22970])
+            ("lw_register_widget" function
+               (:arguments 
+                  ( ("type" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil)
+                    ("pre_activate_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) nil nil)
+                    ("selection_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) nil nil)
+                    ("post_activate_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) nil nil)
+                    ("highlight_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [22972 23449])
+            ("lw_get_widget" function
+               (:arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23491 23503])
+                    ("parent" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23504 23518])
+                    ("pop_up_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23519 23536]))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [23451 23777])
+            ("lw_make_widget" function
+               (:arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23820 23832])
+                    ("parent" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23833 23847])
+                    ("pop_up_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23848 23865]))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [23779 24364])
+            ("lw_create_widget" function
+               (:arguments 
+                  ( ("type" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24409 24420])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24421 24432])
+                    ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24433 24445])
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24446 24464])
+                    ("parent" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24469 24483])
+                    ("pop_up_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24484 24501])
+                    ("pre_activate_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24506 24534])
+                    ("selection_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24535 24560])
+                    ("post_activate_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24565 24594])
+                    ("highlight_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24595 24620]))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [24366 25174])
+            ("destroy_one_instance" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [25207 26491])
+            ("lw_destroy_widget" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [26493 26904])
+            ("lw_destroy_all_widgets" function
+               (:arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [26906 27259])
+            ("lw_destroy_everything" function (:type "void") nil [27261 27370])
+            ("lw_destroy_all_pop_ups" function (:type "void") nil [27372 27677])
+            ("lw_raise_all_pop_up_widgets" function (:type ("Widget" type (:type "class") nil nil)) nil [27760 28494])
+            ("lw_pop_all_widgets" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28546 28558])
+                    ("up" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28559 28570]))                  
+                :type "void")
+                nil [28496 29441])
+            ("lw_pop_up_all_widgets" function
+               (:arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [29443 29529])
+            ("lw_pop_down_all_widgets" function
+               (:arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [29531 29620])
+            ("lw_popup_menu" function
+               (:arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("event" variable
+                       (:pointer 1
+                        :type ("XEvent" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [29622 29998])
+            ("get_one_value" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [30027 30631])
+            ("lw_get_some_values" function
+               (:arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) nil nil)
+                    ("val_out" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [30633 31071])
+            ("lw_get_all_values" function
+               (:pointer 1
+                :arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) nil nil))                  
+                :type ("widget_value" type (:type "class") nil nil))
+                nil [31073 31291])
+            ("lw_get_widget_value_for_widget" function
+               (:pointer 1
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("w" variable (:type ("Widget" type (:type "class") nil nil)) nil nil))                  
+                :type ("widget_value" type (:type "class") nil nil))
+                nil [31423 31704])
+            ("lwlib_updating" variable
+               (:typemodifiers ("static")
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [31798 31828])
+            ("lw_internal_update_other_instances" function
+               (:arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("closure" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil)
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [32001 32896])
+            ("lw_get_widget_id" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) nil nil))                  
+                :type ("LWLIB_ID" type (:type "class") nil nil))
+                nil [32918 33073])
+            ("lw_set_keyboard_focus" function
+               (:arguments 
+                  ( ("parent" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("w" variable (:type ("Widget" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [33105 33290])
+            ("show_one_widget_busy" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33361 33370])
+                    ("flag" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33371 33384]))                  
+                :type "void")
+                nil [33309 33836])
+            ("lw_show_busy" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33875 33884])
+                    ("busy" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33885 33898]))                  
+                :type "void")
+                nil [33838 34326])
+            ("lw_refigure_widget" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34493 34502])
+                    ("doit" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34503 34516]))                  
+                :type "void")
+                nil [34450 34760])
+            ("lw_window_is_in_menubar" function
+               (:arguments 
+                  ( ("win" variable (:type ("Window" type (:type "class") nil nil)) nil nil)
+                    ("menubar_widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [34848 35281])
+            ("lw_set_main_areas" function
+               (:arguments 
+                  ( ("parent" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("menubar" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("work_area" variable (:type ("Widget" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [35330 35530])
+            ("lw_allow_resizing" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35676 35685])
+                    ("flag" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35686 35699]))                  
+                :type "void")
+                nil [35634 35841])
+            ("lw_separator_p" function
+               (:arguments 
+                  ( ("label" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("type" variable
+                       (:pointer 1
+                        :type ("menu_separator" type (:type "enum") nil nil))
+                        nil nil)
+                    ("motif_p" variable (:type "int") nil nil))                  
+                :type "int")
+                nil [36093 39359]))          
+    :file "lwlib.c"
+    :pointmax 39446
+    :fsize 39445
+    :lastmodtime '(19383 49279)
+    :unmatched-syntax '((punctuation 1733 . 1734) (symbol 1726 . 1733) (symbol 1723 . 1725) (symbol 1718 . 1722) (symbol 1708 . 1717) (symbol 1705 . 1707) (symbol 1695 . 1704) (symbol 1692 . 1694) (symbol 1688 . 1691) (symbol 1682 . 1687) (symbol 1679 . 1681) (symbol 1672 . 1677) (punctuation 1671 . 1672))
+    :lexical-table 
+        '(("EXPLAIN" (spp-arg-list ("name" "oc" "nc" "desc" "a1" "a2") 12605 . 12633))
+          )
+
+    )
+   (semanticdb-table "lwlib.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("LWLIB_H" variable (:constant-flag t) nil [955 962])
+            ("X11/Intrinsic.h" include (:system-flag t) nil [964 990])
+            ("LWLIB_ID" type
+               (:typedef ("unsigned long")
+                :superclasses "unsigned long"
+                :type "typedef")
+                nil [1674 1705])
+            ("change_type" type
+               (:typedef ("_change_type" type
+                     (:members 
+                        ( ("NO_CHANGE" variable
+                             (:constant-flag t
+                              :default-value (1749 1750)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1737 1750])
+                          ("INVISIBLE_CHANGE" variable
+                             (:constant-flag t
+                              :default-value (1773 1774)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1754 1774])
+                          ("VISIBLE_CHANGE" variable
+                             (:constant-flag t
+                              :default-value (1795 1796)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1778 1796])
+                          ("STRUCTURAL_CHANGE" variable
+                             (:constant-flag t
+                              :default-value (1820 1821)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1800 1821]))                        
+                      :type "enum")
+                      nil nil)
+                :superclasses "_change_type"
+                :type "typedef")
+                nil [1707 1836])
+            ("button_type" type
+               (:members 
+                  ( ("BUTTON_TYPE_NONE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1859 1876])
+                    ("BUTTON_TYPE_TOGGLE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1879 1898])
+                    ("BUTTON_TYPE_RADIO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1901 1920]))                  
+                :type "enum")
+                nil [1838 1921])
+            ("menu_separator" type
+               (:members 
+                  ( ("SEPARATOR_NO_LINE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2021 2039])
+                    ("SEPARATOR_SINGLE_LINE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2042 2064])
+                    ("SEPARATOR_DOUBLE_LINE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2067 2089])
+                    ("SEPARATOR_SINGLE_DASHED_LINE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2092 2121])
+                    ("SEPARATOR_DOUBLE_DASHED_LINE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2124 2153])
+                    ("SEPARATOR_SHADOW_ETCHED_IN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2156 2183])
+                    ("SEPARATOR_SHADOW_ETCHED_OUT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2186 2214])
+                    ("SEPARATOR_SHADOW_ETCHED_IN_DASH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2217 2249])
+                    ("SEPARATOR_SHADOW_ETCHED_OUT_DASH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2252 2285])
+                    ("SEPARATOR_SHADOW_DOUBLE_ETCHED_IN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2342 2376])
+                    ("SEPARATOR_SHADOW_DOUBLE_ETCHED_OUT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2379 2414])
+                    ("SEPARATOR_SHADOW_DOUBLE_ETCHED_IN_DASH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2417 2456])
+                    ("SEPARATOR_SHADOW_DOUBLE_ETCHED_OUT_DASH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2459 2500]))                  
+                :type "enum")
+                nil [1953 2501])
+            ("widget_value" type
+               (:typedef ("_widget_value" type
+                     (:members 
+                        ( ("lname" variable (:type ("Lisp_Object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2559 2579])
+                          ("name" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [2582 2594])
+                          ("value" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [2643 2656])
+                          ("lkey" variable (:type ("Lisp_Object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2723 2742])
+                          ("key" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [2745 2756])
+                          ("help" variable (:type ("Lisp_Object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2886 2903])
+                          ("enabled" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2930 2946])
+                          ("selected" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2974 2991])
+                          ("edited" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3047 3062])
+                          ("button_type" variable (:type ("button_type" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [3096 3125])
+                          ("change" variable (:type ("change_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3183 3202])
+                          ("this_one_change" variable (:type ("change_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3321 3351])
+                          ("contents" variable
+                             (:pointer 1
+                              :type ("_widget_value" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [3423 3454])
+                          ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3489 3509])
+                          ("next" variable
+                             (:pointer 1
+                              :type ("_widget_value" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [3541 3568])
+                          ("toolkit_data" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [3644 3663])
+                          ("free_toolkit_data" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3765 3791])
+                          ("free_list" variable
+                             (:pointer 1
+                              :type ("_widget_value" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [3931 3963]))                        
+                      :type "struct")
+                      nil nil)
+                :superclasses "_widget_value"
+                :type "typedef")
+                nil [2503 3979])
+            ("lw_callback" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [3990 4052])
+            ("lw_register_widget" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("type" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("pre_activate_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("selection_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("post_activate_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("highlight_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4054 4293])
+            ("lw_get_widget" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("parent" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("pop_up_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [4294 4368])
+            ("lw_make_widget" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("parent" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("pop_up_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [4369 4444])
+            ("lw_create_widget" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("type" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("parent" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("pop_up_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("pre_activate_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("selection_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("post_activate_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("highlight_cb" variable (:type ("lw_callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [4445 4721])
+            ("lw_get_widget_id" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("LWLIB_ID" type (:type "class") nil nil))
+                nil [4722 4765])
+            ("lw_modify_all_widgets" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("deep_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [4766 4847])
+            ("lw_destroy_widget" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4848 4888])
+            ("lw_destroy_all_widgets" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4889 4937])
+            ("lw_destroy_everything" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4938 4978])
+            ("lw_destroy_all_pop_ups" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4979 5020])
+            ("lw_raise_all_pop_up_widgets" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [5021 5069])
+            ("lw_get_all_values" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("widget_value" type (:type "class") nil nil))
+                nil [5070 5122])
+            ("lw_get_some_values" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [5123 5189])
+            ("lw_pop_up_all_widgets" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [5190 5237])
+            ("lw_pop_down_all_widgets" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("id" variable (:type ("LWLIB_ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [5238 5287])
+            ("malloc_widget_value" function
+               (:prototype-flag t
+                :pointer 1
+                :type ("widget_value" type (:type "class") nil nil))
+                nil [5288 5325])
+            ("free_widget_value" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [5326 5372])
+            ("lw_popup_menu" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type ("XEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [5373 5417])
+            ("lw_set_keyboard_focus" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("parent" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [5490 5549])
+            ("lw_show_busy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("busy" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [5606 5655])
+            ("lw_refigure_widget" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("doit" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [5723 5778])
+            ("lw_window_is_in_menubar" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("win" variable (:type ("Window" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("menubar_widget" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [5863 5937])
+            ("lw_allow_resizing" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("flag" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [6014 6068])
+            ("lw_set_main_areas" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("parent" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("menubar" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("work_area" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [6100 6191])
+            ("lw_separator_p" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("label" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("type" variable
+                       (:pointer 1
+                        :type ("menu_separator" type (:type "enum") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("motif_p" variable (:type "int") (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [6442 6527])
+            ("lwlib_bcopy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [6529 6572]))          
+    :file "lwlib.h"
+    :pointmax 6681
+    :fsize 6680
+    :lastmodtime '(19383 49279)
+    :unmatched-syntax '((TYPEDEF 3982 . 3989))
+    :lexical-table 
+        '(("LWLIB_H")
+          )
+
+    )
+   (semanticdb-table "lwlib-Xaw.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1023 1041])
+            ("setjmp.h" include (:system-flag t) nil [1042 1061])
+            ("../src/lisp.h" include nil nil [1063 1087])
+            ("lwlib-Xaw.h" include nil nil [1089 1111])
+            ("X11/StringDefs.h" include (:system-flag t) nil [1113 1140])
+            ("X11/IntrinsicP.h" include (:system-flag t) nil [1141 1168])
+            ("X11/CoreP.h" include (:system-flag t) nil [1169 1191])
+            ("X11/Shell.h" include (:system-flag t) nil [1192 1214])
+            ("X11/Xaw/Scrollbar.h" include (:system-flag t) nil [1438 1468])
+            ("X11/Xaw/Paned.h" include (:system-flag t) nil [1469 1495])
+            ("X11/Xaw/Dialog.h" include (:system-flag t) nil [1496 1523])
+            ("X11/Xaw/Form.h" include (:system-flag t) nil [1524 1549])
+            ("X11/Xaw/Command.h" include (:system-flag t) nil [1550 1578])
+            ("X11/Xaw/Label.h" include (:system-flag t) nil [1579 1605])
+            ("X11/Xatom.h" include (:system-flag t) nil [1631 1653])
+            ("xaw_generic_callback" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "void")
+                nil [1655 1723])
+            ("lw_xaw_widget_p" function
+               (:arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [1726 1885])
+            ("xaw_update_one_widget" function
+               (:arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3626 3652])
+                    ("widget" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3653 3667])
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3677 3695])
+                    ("deep_p" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3696 3711]))                  
+                :type "void")
+                nil [3580 5150])
+            ("xaw_update_one_value" function
+               (:arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil)
+                    ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("val" variable
+                       (:pointer 1
+                        :type ("widget_value" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [5152 5426])
+            ("xaw_destroy_instance" function
+               (:arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [5428 5697])
+            ("xaw_popup_menu" function
+               (:arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("event" variable
+                       (:pointer 1
+                        :type ("XEvent" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [5699 5840])
+            ("xaw_pop_instance" function
+               (:arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5883 5909])
+                    ("up" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5910 5921]))                  
+                :type "void")
+                nil [5842 7888])
+            ("overrideTrans" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "\"<Message>WM_PROTOCOLS: lwlib_delete_dialog()\""
+                :type "char")
+                nil [7912 7990])
+            ("dialogOverride" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "\"<KeyPress>Escape:	lwlib_delete_dialog()\""
+                :type "char")
+                nil [8031 8111])
+            ("wm_delete_window" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "void")
+                nil [8112 8143])
+            ("xaw_actions" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"lwlib_delete_dialog\", wm_delete_window}
+}"
+                :type ("XtActionsRec" type (:type "class") nil nil))
+                nil [8144 8229])
+            ("actions_initted" variable
+               (:typemodifiers ("static")
+                :default-value "False;"
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [8230 8269])
+            ("make_dialog" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("parent" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("pop_up_p" variable (:type ("Boolean" type (:type "class") nil nil)) nil nil)
+                    ("shell_title" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("icon_name" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("text_input_slot" variable (:type ("Boolean" type (:type "class") nil nil)) nil nil)
+                    ("radio_box" variable (:type ("Boolean" type (:type "class") nil nil)) nil nil)
+                    ("list" variable (:type ("Boolean" type (:type "class") nil nil)) nil nil)
+                    ("left_buttons" variable (:type "int") nil nil)
+                    ("right_buttons" variable (:type "int") nil nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [8271 12168])
+            ("xaw_create_dialog" function
+               (:arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [12170 13528])
+            ("xaw_generic_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("closure" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil)
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [13531 14687])
+            ("wm_delete_window" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) nil nil)
+                    ("closure" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil)
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) nil nil))                  
+                :type "void")
+                nil [14689 15575])
+            ("xaw_create_scrollbar" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [16991 18113])
+            ("xaw_create_main" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("instance" variable
+                       (:pointer 1
+                        :type ("widget_instance" type (:type "class") nil nil))
+                        nil nil))                  
+                :type ("Widget" type (:type "class") nil nil))
+                nil [18115 18415])
+            ("xaw_creation_table" variable
+               (:dereference 1
+                :default-value "{
+  {\"scrollbar\",			xaw_create_scrollbar},
+  {\"main\",			xaw_create_main},
+  {NULL, NULL}
+}"
+                :type ("widget_creation_entry" type (:type "class") nil nil))
+                nil [18417 18554]))          
+    :file "lwlib-Xaw.c"
+    :pointmax 18641
+    :fsize 18640
+    :lastmodtime '(19383 49279)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!xhyang!emacs-23.2!lwlib!semantic.cache"
+  :semantic-tag-version "2.0pre7"
+  :semanticdb-version "2.0pre7"
+  )

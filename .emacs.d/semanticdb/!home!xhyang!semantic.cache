@@ -1,0 +1,42 @@
+;; Object xhyang/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "xhyang/"
+  :tables (list 
+   (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("assert.h" include (:system-flag t) nil [1 20])
+            ("ctype.h" include (:system-flag t) nil [21 39])
+            ("errno.h" include (:system-flag t) nil [40 58])
+            ("limits.h" include (:system-flag t) nil [59 78])
+            ("string.h" include (:system-flag t) nil [79 98])
+            ("stdarg.h" include (:system-flag t) nil [99 118])
+            ("stdlib.h" include (:system-flag t) nil [119 138])
+            ("stdio.h" include (:system-flag t) nil [139 157])
+            ("Test" type
+               (:members 
+                  ( ("a" variable (:type "int") (reparse-symbol classsubparts) [174 180])
+                    ("b" variable (:type "int") (reparse-symbol classsubparts) [183 189]))                  
+                :type "struct")
+                nil [159 192])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [203 212])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [213 227]))                  
+                :type "int")
+                nil [194 256]))          
+    :file "test.c"
+    :pointmax 256
+    :fsize 256
+    :lastmodtime '(19571 22888)
+    :unmatched-syntax 'nil
+    )
+    )
+  :file "!home!xhyang!semantic.cache"
+  :semantic-tag-version "2.0pre7"
+  :semanticdb-version "2.0pre7"
+  )
